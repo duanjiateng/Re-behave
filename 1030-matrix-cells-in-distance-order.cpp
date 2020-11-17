@@ -21,5 +21,7 @@ public:
         sort(res.begin(), res.end(), [=](vector<int> &a, vector<int> &b) {
             return abs(a[0] - r0) + abs(a[1] - c0) < abs(b[0] - r0) + abs(b[1] - c0);
         });
+
+        return res;
     }
 };
